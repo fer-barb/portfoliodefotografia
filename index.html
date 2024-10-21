@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Fotografia</title>
+    <!-- Fonte 'Lora' do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lora', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            padding: 2rem;
+            background-color: #87CEEB; /* Fundo azul claro */
+            color: #fff;
+            margin: 0;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.2rem;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 2rem;
+        }
+
+        .gallery div {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .gallery h3 {
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        @media (min-width: 768px) {
+            .gallery div {
+                flex-basis: calc(33.33% - 40px);
+            }
+        }
+
+        @media (max-width: 767px) {
+            .gallery div {
+                flex-basis: calc(50% - 40px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery div {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Título principal -->
+    <h1>Portfólio de Fotografia</h1>
+
+    <!-- Descrição -->
+    <p>Sou apaixonada por fotografia, é um hobby que me permite ver o mundo por outra ótica e guardar lembranças. Abaixo algumas das fotografias da minha primeira viagem aos EUA</p>
+
+    <!-- Galeria de fotos -->
+    <div class="gallery">
+        <div>
+            <img src="https://raw.githubusercontent.com/fer-barb/imagensportfoliouni/refs/heads/main/Calma.jfif" alt="Legenda 1">
+            <h3>Calma</h3>
+        </div>
+        <div>
+            <img src="https://raw.githubusercontent.com/fer-barb/imagensportfoliouni/refs/heads/main/Livros.jfif" alt="Legenda 2">
+            <h3>Livros</h3>
+        </div>
+        <div>
+            <img src="https://github.com/fer-barb/imagensportfoliouni/blob/main/Mont%20Vernon.jpeg?raw=true" alt="Legenda 3">
+            <h3>Mont Vernon</h3>
+        </div>
+        <div>
+            <img src="https://github.com/fer-barb/imagensportfoliouni/blob/main/New%20Hampshire.jpeg?raw=true" alt="Legenda 4">
+            <h3>New Hampshire</h3>
+        </div>
+        <div>
+            <img src="https://github.com/fer-barb/imagensportfoliouni/blob/main/Paz.jpeg?raw=true" alt="Legenda 5">
+            <h3>Paz</h3>
+        </div>
+    </div>
+
+</body>
+</html>
